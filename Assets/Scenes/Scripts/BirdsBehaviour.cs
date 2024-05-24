@@ -1,13 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
+
+public static class GlobalVariables
+{
+    public static float score = 0;
+}
 
 public class BirdsBehaviour : MonoBehaviour
 {
     public GameObject deathEffect;
     public float speed = 5f;
     private Vector3 direction;
+    public float pointsBirds = 5;
 
     void Start()
     {
@@ -39,5 +42,7 @@ public class BirdsBehaviour : MonoBehaviour
     {
         Destroy(gameObject);
         GameObject newDeathEffect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+        GlobalVariables.score += pointsBirds;
+        ManagerScore.instance.SetScore(GlobalVariables.score);
     }
 }
