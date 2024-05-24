@@ -28,6 +28,11 @@ public class BirdsBehaviour : MonoBehaviour
     {
         // Faire avancer l'oiseau
         transform.Translate(direction * speed * Time.deltaTime);
+
+        if(transform.position.x > 5 || transform.position.x < -5)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnMouseDown()
