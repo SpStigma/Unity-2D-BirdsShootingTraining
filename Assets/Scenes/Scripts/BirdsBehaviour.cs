@@ -1,21 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class BirdsBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject deathEffect;
+    public float speed = 5f;
+    private Vector3 direction;
+
     void Start()
     {
+        // Déterminer la direction en fonction de la position initiale
+        if (transform.position.x > Camera.main.transform.position.x)
+        {
+            // L'oiseau est à droite de la caméra, il doit aller à gauche
+            direction = Vector3.left;
+        }
+        else
+        {
+            // L'oiseau est à gauche de la caméra, il doit aller à droite
+            direction = Vector3.right;
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Faire avancer l'oiseau
+        transform.Translate(direction * speed * Time.deltaTime);
     }
 
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        GameObject newDeathEffect = Instantiate(deathEffect, transform.position, Quaternion.identity);
     }
 }

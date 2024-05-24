@@ -10,7 +10,7 @@ public class ParallaxEffect : MonoBehaviour
     public bool scrollLeft;
 
     private float singleTexturedWidth;
-    // Start is called before the first frame update
+
     void Start()
     {
         SetupTexture();
@@ -40,7 +40,7 @@ public class ParallaxEffect : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         Scroll();
