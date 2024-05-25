@@ -843,7 +843,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1163,7 +1163,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686d35dfc29a42c469938677ef7a2266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabsbirds: {fileID: 3676764016001984783, guid: f30dcbab15e47aa47b390d94a9ce77c5, type: 3}
+  prefabsbirds:
+  - {fileID: 3676764016001984783, guid: f30dcbab15e47aa47b390d94a9ce77c5, type: 3}
+  - {fileID: 8870676821882459781, guid: 231aac3af67126a478ac786d6c79ae9b, type: 3}
+  - {fileID: 7118085355407686552, guid: 216985aba6d5030469856d77d2b8f8c5, type: 3}
+  - {fileID: 3806920339644660483, guid: 324b7cb3f8b30904eb6537ac1cdaba8c, type: 3}
+  - {fileID: 2605263701882888676, guid: 862634a3824ad764c82b599db169c26a, type: 3}
   spawnRigthX: {fileID: 719596938}
   spawnRigthY: {fileID: 1864604650}
   spawnLeftY: {fileID: 1620759463}
