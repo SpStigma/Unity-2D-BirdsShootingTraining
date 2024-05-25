@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject prefabsbirds;
+    public List<GameObject> prefabsbirds;
 
     public Transform spawnRigthX;
     public Transform spawnRigthY;
@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
         counterDecrement -= Time.deltaTime;
         if(counterDecrement <= 0)
         {
-            GameObject newBird =  Instantiate(prefabsbirds, SelectSpawnPoint(), Quaternion.identity);
+            GameObject newBird =  Instantiate(prefabsbirds[Random.Range(0, prefabsbirds.Count)], SelectSpawnPoint(), Quaternion.identity);
             if (newBird.transform.position.x > transform.position.x)
             {
                 // Si l'oiseau est généré du côté droit, basculez son sprite horizontalement
