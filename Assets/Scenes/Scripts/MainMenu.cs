@@ -55,23 +55,23 @@ public class MainMenu : MonoBehaviour
 
         if (main1.isOn)
         {
-            parallax1.SetActive(true);
+            parallax2.SetActive(true);
         }
         else if (main2.isOn)
         {
-            parallax2.SetActive(true);
+            parallax5.SetActive(true);
         }
         else if (main3.isOn)
         {
-            parallax3.SetActive(true);
+            parallax4.SetActive(true);
         }
         else if (main4.isOn)
         {
-            parallax4.SetActive(true);
+            parallax3.SetActive(true);
         }
         else
         {
-            parallax5.SetActive(true);
+            parallax1.SetActive(true);
         }
     }
 }
