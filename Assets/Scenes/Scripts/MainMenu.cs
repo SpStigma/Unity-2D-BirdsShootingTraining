@@ -8,6 +8,12 @@ public class MainMenu : MonoBehaviour
     public Toggle main2;
     public Toggle main3;
     public Toggle main4;
+    public GameObject parallax1;
+    public GameObject parallax2;
+    public GameObject parallax3;
+    public GameObject parallax4;
+    public GameObject parallax5;
+    
     public void PlayGame()
     {
         if (main1.isOn)
@@ -37,5 +43,35 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("quit succed");
         Application.Quit();
+    }
+
+    public void ChooseBackground()
+    {
+        parallax1.SetActive(false);
+        parallax2.SetActive(false);
+        parallax3.SetActive(false);
+        parallax4.SetActive(false);
+        parallax5.SetActive(false);
+
+        if (main1.isOn)
+        {
+            parallax1.SetActive(true);
+        }
+        else if (main2.isOn)
+        {
+            parallax2.SetActive(true);
+        }
+        else if (main3.isOn)
+        {
+            parallax3.SetActive(true);
+        }
+        else if (main4.isOn)
+        {
+            parallax4.SetActive(true);
+        }
+        else
+        {
+            parallax5.SetActive(true);
+        }
     }
 }
