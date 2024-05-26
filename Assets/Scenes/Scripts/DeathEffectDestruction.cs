@@ -10,16 +10,9 @@ public class DeathEffectDestruction : MonoBehaviour
         StartCoroutine(DestroyDeathEffect());     
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator DestroyDeathEffect()
     {
-        yield return new WaitForSeconds(3f);
-
+        yield return new WaitForSecondsRealtime(0.5f);
         Destroy(gameObject);
     }
 }

@@ -11,9 +11,9 @@ public class BirdsBehaviour : MonoBehaviour
     public GameObject deathEffect;
     public float speedBegining;
     public float speedEnding;
+    public float pointsBirds = 5;
     private float speed;
     private Vector3 direction;
-    public float pointsBirds = 5;
 
     void Start()
     {
