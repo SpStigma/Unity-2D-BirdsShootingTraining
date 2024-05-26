@@ -196,4 +196,4 @@ MonoBehaviour:
   deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
   speedBegining: 2
   speedEnding: 4
-  pointsBirds: 1
+  pointsBirds: 5

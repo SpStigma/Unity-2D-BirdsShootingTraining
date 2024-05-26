@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4121cf71d600e4894a35edbf781c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndGameTime: 4.5
+  EndGameTime: 60
   deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
 --- !u!1 &935317915
 GameObject:
@@ -1439,6 +1439,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 880009248}
+  - {fileID: 374960330}
   - {fileID: 332972861}
   - {fileID: 476632358}
   - {fileID: 39389576}
@@ -1447,5 +1449,3 @@ SceneRoots:
   - {fileID: 1696494601}
   - {fileID: 1695157112}
   - {fileID: 935317918}
-  - {fileID: 374960330}
-  - {fileID: 880009248}
