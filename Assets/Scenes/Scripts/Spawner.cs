@@ -15,19 +15,17 @@ public class Spawner : MonoBehaviour
     [Space(20)]
     public float timeSpawner = 2f;
     private float counterDecrement;
-    private float timeActual;
     private float timeLastReduction;
+    private float minReductionSpawner = 0.25f;
 
     void Start()
     {
         counterDecrement = timeSpawner;
-        timeActual = 0f;
         timeLastReduction = 0f;
     }
 
     void Update()
     {
-        timeActual += Time.deltaTime;
         timeLastReduction += Time.deltaTime;
         counterDecrement -= Time.deltaTime;
 
@@ -47,9 +45,13 @@ public class Spawner : MonoBehaviour
 
     public void ReduceSpawnTime()
     {
-        if(timeLastReduction >= 10f)
+        if(timeLastReduction >= 5f)
         {
             timeSpawner *= .9f;
+            if (timeSpawner < minReductionSpawner)
+            {
+                timeSpawner = minReductionSpawner;
+            }
             timeLastReduction = 0f;
         }
     }
