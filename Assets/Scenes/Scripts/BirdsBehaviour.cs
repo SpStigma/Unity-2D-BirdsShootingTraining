@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public static class GlobalVariables
@@ -8,7 +9,9 @@ public static class GlobalVariables
 public class BirdsBehaviour : MonoBehaviour
 {
     public GameObject deathEffect;
-    public float speed = 5f;
+    public float speedBegining;
+    public float speedEnding;
+    private float speed;
     private Vector3 direction;
     public float pointsBirds = 5;
 
@@ -25,6 +28,8 @@ public class BirdsBehaviour : MonoBehaviour
             // L'oiseau est à gauche de la caméra, il doit aller à droite
             direction = Vector3.right;
         }
+
+        speed = Random.Range(speedBegining, speedEnding);
     }
 
     void Update()
