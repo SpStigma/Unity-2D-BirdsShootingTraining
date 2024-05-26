@@ -15,15 +15,22 @@ public class Spawner : MonoBehaviour
     [Space(20)]
     public float timeSpawner = 2f;
     private float counterDecrement;
+    private float timeActual;
+    private float timeLastReduction;
 
     void Start()
     {
         counterDecrement = timeSpawner;
+        timeActual = 0f;
+        timeLastReduction = 0f;
     }
 
     void Update()
     {
+        timeActual += Time.deltaTime;
+        timeLastReduction += Time.deltaTime;
         counterDecrement -= Time.deltaTime;
+
         if(counterDecrement <= 0)
         {
             GameObject newBird =  Instantiate(prefabsbirds[Random.Range(0, prefabsbirds.Count)], SelectSpawnPoint(), Quaternion.identity);
@@ -33,6 +40,17 @@ public class Spawner : MonoBehaviour
                 newBird.GetComponent<SpriteRenderer>().flipX = false;
             }
             counterDecrement = timeSpawner;
+        }
+
+        ReduceSpawnTime();
+    }
+
+    public void ReduceSpawnTime()
+    {
+        if(timeLastReduction >= 10f)
+        {
+            timeSpawner *= .9f;
+            timeLastReduction = 0f;
         }
     }
 
