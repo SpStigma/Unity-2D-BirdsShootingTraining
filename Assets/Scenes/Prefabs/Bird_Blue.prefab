@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1421527757
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 485692345, guid: 2b380bf98f1a3cf4a8f90b68d861d5a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -195,5 +195,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
   speedBegining: 2
-  speedEnding: 4
+  speedEnding: 3
   pointsBirds: 5
