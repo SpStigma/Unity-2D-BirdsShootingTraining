@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuOption: {fileID: 1881554047}
-  EndGameTime: 5
+  EndGameTime: 60
   deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
   panel: {fileID: 1406836758}
 --- !u!1 &888413188
