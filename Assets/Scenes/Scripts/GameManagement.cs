@@ -4,23 +4,72 @@ public class GameManagement : MonoBehaviour
 {
     public GameObject menuOption;
     private bool isMenuActive = false;
+    public float EndGameTime = 60f;
+    private float time;
+    public GameObject deathEffect;
+    public GameObject panel;
+
+    void Start()
+    {
+        time = 0f;
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        time += Time.deltaTime;
+
+        if (time >= EndGameTime)
         {
-            if (!isMenuActive)
+            EndGame();
+        }
+        else
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
             {
-                Time.timeScale = 0;
-                menuOption.SetActive(true);
-                isMenuActive = true;
-            }
-            else
-            {
-                Time.timeScale = 1;
-                menuOption.SetActive(false);
-                isMenuActive = false;
+                if (!isMenuActive)
+                {
+                    Time.timeScale = 0f;
+                    menuOption.SetActive(true);
+                    isMenuActive = true;
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                    menuOption.SetActive(false);
+                    isMenuActive = false;
+                }
             }
         }
+
+    }
+
+    void EndGame()
+    {
+        PausedGame();
+        DestroyAllBirds();
+        SetActivePanel(panel);
+    }
+
+    void PausedGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    void DestroyAllBirds()
+    {
+        BirdsBehaviour[] birds = GameObject.FindObjectsOfType<BirdsBehaviour>();
+
+        foreach (BirdsBehaviour bird in birds)
+        {
+            Vector3 birdPosition = bird.transform.position;
+            Destroy(bird.gameObject);
+            Instantiate(deathEffect, birdPosition, Quaternion.identity);
+        }
+    }
+
+    void SetActivePanel(GameObject panel)
+    {
+        panel.SetActive(true);
     }
 }

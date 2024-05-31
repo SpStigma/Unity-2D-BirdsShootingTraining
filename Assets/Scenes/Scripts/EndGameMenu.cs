@@ -19,7 +19,7 @@ public class EndGameMenu : MonoBehaviour
     // Method to reload the current scene.
     public void ReloadTheScene()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
