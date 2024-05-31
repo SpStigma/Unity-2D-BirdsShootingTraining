@@ -1203,7 +1203,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 880009248}
-  - component: {fileID: 880009249}
   - component: {fileID: 880009250}
   m_Layer: 0
   m_Name: GameManagement
@@ -1227,21 +1226,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &880009249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880009247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4121cf71d600e4894a35edbf781c5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EndGameTime: 60
-  deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
-  panel: {fileID: 1634883466}
 --- !u!114 &880009250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,6 +1239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuOption: {fileID: 1529430933}
+  EndGameTime: 60
+  deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
+  panel: {fileID: 1634883466}
 --- !u!1 &935317915
 GameObject:
   m_ObjectHideFlags: 0
