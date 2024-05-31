@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -18,23 +19,28 @@ public class MainMenu : MonoBehaviour
     {
         if (main1.isOn)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            PlayButtonSFX();
+            StartCoroutine(BackgroundLoader(2));
         }
         else if (main2.isOn)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+            PlayButtonSFX();
+            StartCoroutine(BackgroundLoader(3));
         }
         else if(main3.isOn)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+            PlayButtonSFX();
+            StartCoroutine(BackgroundLoader(4));
         }
         else if(main4.isOn)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+            PlayButtonSFX();
+            StartCoroutine(BackgroundLoader(5));
         }
         else
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            PlayButtonSFX();
+            StartCoroutine(BackgroundLoader(1));
         }
 
     }
@@ -73,5 +79,18 @@ public class MainMenu : MonoBehaviour
         {
             parallax1.SetActive(true);
         }
+    }
+
+    public void PlayButtonSFX()
+    {
+        FindObjectOfType<AudioManager>().Play("Button");
+    }
+
+    IEnumerator BackgroundLoader(int numScene)
+    {
+        yield return new WaitForSeconds(.25f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numScene);
+
     }
 }
