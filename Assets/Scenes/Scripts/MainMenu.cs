@@ -14,6 +14,9 @@ public class MainMenu : MonoBehaviour
     public GameObject parallax3;
     public GameObject parallax4;
     public GameObject parallax5;
+    public Toggle cursorSwap;
+    public Texture2D cursor1;
+    public Texture2D cursor2;
     
     public void PlayGame()
     {
@@ -92,5 +95,19 @@ public class MainMenu : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + numScene);
 
+    }
+
+    public void ChoseCursor()
+    {
+        Vector2 hotSpot = new Vector2(cursor1.width / 2, cursor1.height / 2);
+        if(cursorSwap.isOn)
+        {
+            hotSpot = new Vector2(cursor2.width / 2, cursor2.height / 2);
+            Cursor.SetCursor(cursor2, hotSpot, CursorMode.Auto);
+        }
+        else
+        {
+            Cursor.SetCursor(cursor1, hotSpot, CursorMode.Auto);
+        }
     }
 }

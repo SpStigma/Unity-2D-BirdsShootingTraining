@@ -627,8 +627,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Shooting_Training
-  metroPackageVersion: 
+  metroPackageName: ShootingTraining
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -636,7 +636,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Shooting_Training
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Shooting_Training
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
