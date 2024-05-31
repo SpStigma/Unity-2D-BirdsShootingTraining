@@ -1,3 +1,4 @@
+using System.Data.Common;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class EndGame : MonoBehaviour
     public float EndGameTime = 60f;
     private float time;
     public GameObject deathEffect;
+    public GameObject panel;
 
     void Start()
     {
@@ -20,6 +22,7 @@ public class EndGame : MonoBehaviour
         {
             PausedGame();
             DestroyAllBirds();
+            SetActivePanel(panel);
         }
     }
 
@@ -38,5 +41,10 @@ public class EndGame : MonoBehaviour
             Destroy(bird.gameObject);
             Instantiate(deathEffect, birdPosition, Quaternion.identity);
         }
+    }
+
+    void SetActivePanel(GameObject panel)
+    {
+        panel.SetActive(true);
     }
 }

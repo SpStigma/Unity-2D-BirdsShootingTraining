@@ -45,7 +45,7 @@ public class BirdsBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        FindObjectOfType<AudioManager>().Play("Shot");
+        // FindObjectOfType<AudioManager>().Play("Shot");
         Destroy(gameObject);
         GameObject newDeathEffect = Instantiate(deathEffect, transform.position, Quaternion.identity);
         GlobalVariables.score += pointsBirds;

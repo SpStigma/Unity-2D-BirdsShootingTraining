@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class EndGameMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TextMeshProUGUI congratulations;
+
     void Start()
     {
-        
+        Congratulation();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    // Method to Update the congratulation message.
+    public void Congratulation()
     {
-        
+        congratulations.text = "Good Job\n Your score: " + GlobalVariables.score;
+    }
+    // Method to reload the current scene.
+    public void ReloadTheScene()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 }
