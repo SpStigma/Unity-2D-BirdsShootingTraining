@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndGameTime: 60
   deathEffect: {fileID: 184975573469007649, guid: ba8be02b8e5cc4948913f8044ec43b47, type: 3}
-  panel: {fileID: 2126537964}
+  panel: {fileID: 593152545}
 --- !u!114 &880009250
 MonoBehaviour:
   m_ObjectHideFlags: 0

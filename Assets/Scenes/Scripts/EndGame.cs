@@ -24,6 +24,10 @@ public class EndGame : MonoBehaviour
             DestroyAllBirds();
             SetActivePanel(panel);
         }
+        else
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     void PausedGame()
