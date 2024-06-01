@@ -18,6 +18,12 @@ public class MainMenu : MonoBehaviour
     public Texture2D cursor1;
     public Texture2D cursor2;
     
+
+    public void Start()
+    {
+        InitializeCursor();
+    }
+
     public void PlayGame()
     {
         if (main1.isOn)
@@ -99,15 +105,17 @@ public class MainMenu : MonoBehaviour
 
     public void ChoseCursor()
     {
-        Vector2 hotSpot = new Vector2(cursor1.width / 2, cursor1.height / 2);
+        Vector2 hotSpot;
         if(cursorSwap.isOn)
         {
             hotSpot = new Vector2(cursor2.width / 2, cursor2.height / 2);
             Cursor.SetCursor(cursor2, hotSpot, CursorMode.Auto);
         }
-        else
-        {
-            Cursor.SetCursor(cursor1, hotSpot, CursorMode.Auto);
-        }
+    }
+
+    private void InitializeCursor()
+    {
+        Vector2 hotSpot = new Vector2(cursor1.width / 2, cursor1.height / 2);
+        Cursor.SetCursor(cursor1, hotSpot, CursorMode.Auto);
     }
 }
