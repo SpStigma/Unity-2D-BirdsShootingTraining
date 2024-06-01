@@ -20,6 +20,7 @@ public class EndGameMenu : MonoBehaviour
     public void ReloadTheScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        GlobalVariables.score = 0;
         SceneManager.LoadScene(currentSceneIndex);
     }
 }
