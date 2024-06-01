@@ -3,11 +3,17 @@ using UnityEngine;
 public class GameManagement : MonoBehaviour
 {
     public GameObject menuOption;
-    private bool isMenuActive = false;
+    public bool isMenuActive = false;
     public float EndGameTime = 60f;
     private float time;
     public GameObject deathEffect;
     public GameObject panel;
+    public static GameManagement instance;
+
+    public void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {
