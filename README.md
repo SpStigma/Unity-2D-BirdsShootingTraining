@@ -30,3 +30,13 @@ This is a small project developed in Unity to hone my skills in Unity and C# pro
 | resources       | Contains additional materials for the README file.                                                        |
 | .gitignore      | Specifies files and folders to be ignored by Git version control.                                         |
 | README.md       | Information about the project.                                                             |
+
+## Assets
+
+<p align="center">
+    <a href="https://free-game-assets.itch.io/free-sky-with-clouds-background-pixel-art-set" target="_blank">
+        <img src="./resources/images/ThanksToCraftPix.jpg" alt="Parallax Skies">
+    </a>
+    <br>
+    By <a href="https://free-game-assets.itch.io/" target="_blank">CRAFTPIX</a> from <a href="https://itch.io/" target="_blank">itch.io</a>
+</p>
