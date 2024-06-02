@@ -19,3 +19,14 @@ This is a small project developed in Unity to hone my skills in Unity and C# pro
     <img src="https://img.shields.io/badge/Git-f05032?logo=git&logoColor=white&style=for-the-badge" alt="Git badge">
     <img src="https://img.shields.io/badge/UNITY-000000?logo=unity&logoColor=white&style=for-the-badge" alt="Unity badge">
 </p>
+
+## Files description
+
+| FILE            | DESCRIPTION                                                                                               |
+| :-------------: | --------------------------------------------------------------------------------------------------------- |
+| Assets          | Contains project assets like 2D sprites, scripts, sounds, textures etc.                                   |
+| Packages        | May include Unity packages with pre-built code and resources for specific functionalities.                |
+| ProjectSettings | Stores project-specific configuration files (import settings, platform settings, quality settings, etc.). |
+| resources       | Contains additional materials for the README file.                                                        |
+| .gitignore      | Specifies files and folders to be ignored by Git version control.                                         |
+| README.md       | Information about the project.                                                             |
