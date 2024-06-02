@@ -5,11 +5,11 @@
 This is a small project developed in Unity to hone my skills in Unity and C# programming. The objective of the game is to shoot birds and achieve the highest score possible. Additionally, the game features a parallax effect to create a more dynamic and engaging visual experience.
 
 <p align= "left">
-    <img src="./resources/images/Screenshot" alt="ScreenShots">
+    <img src="./resources/images/Screenshot.png" alt="ScreenShots">
 </p>
 
 <p align="center">
-    <img src="./resources/images/Screenshot1" alt="ScreenShots">
+    <img src="./resources/images/Screenshot1.png" alt="ScreenShots">
 </p>
 
 <p align="right">
