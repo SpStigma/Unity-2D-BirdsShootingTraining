@@ -73,4 +73,5 @@ A heartfelt thank you to all contributors who provided freely licensed graphics 
 
 
 ## Author
-    Me XD: Github: [@SpStigma](https://github.com/SpStigma)
+**ME XD**
+- Github: [@SpStigma](https://github.com/SpStigma)
