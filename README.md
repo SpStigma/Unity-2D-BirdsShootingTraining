@@ -65,4 +65,4 @@ git clone https://github.com/SpStigma/Unity-2D-BirdsShootingTraining.git
     - Click the "Play" button at the top to run the game in the Unity Editor.
 
 ### Play on Itchio
-1- Click on  <a href="https://spstigma.itch.io/shooting-birds" target="_blank">
+1- Click on  <a href="https://spstigma.itch.io/shooting-birds" target="_blank"> Game on itchio </a>
