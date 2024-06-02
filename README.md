@@ -69,7 +69,7 @@ git clone https://github.com/SpStigma/Unity-2D-BirdsShootingTraining.git
 
 ## Thanks
 
-A heartfelt thank you to all contributors who provided freely licensed graphics and music for our project.
+A heartfelt thank you to all contributors who provided freely licensed graphics and music for my project.
 
 
 ## Author
