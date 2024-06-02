@@ -40,3 +40,29 @@ This is a small project developed in Unity to hone my skills in Unity and C# pro
     <br>
     By <a href="https://free-game-assets.itch.io/" target="_blank">CRAFTPIX</a> from <a href="https://itch.io/" target="_blank">itch.io</a>
 </p>
+
+## Installation
+
+### Clone the repository and run from Unity
+
+1. Clone the repository:
+    - Open your preferred terminal.
+    - Navigate to the directory where you want to clone the repository.
+    - Run the following command:
+```
+git clone https://github.com/SpStigma/Unity-2D-BirdsShootingTraining.git
+```
+
+2. Open in Unity:
+    - Launch Unity Hub.
+    - Click on "Add" and select the folder where you cloned the repository.
+    - Once added, click on the project to open it in Unity.
+
+3. Run from Unity:
+    - In the Unity Editor, navigate to the "Assets" folder.
+    - Open the "Scenes" folder.
+    - Double-click on the "Title Scene" to open it.
+    - Click the "Play" button at the top to run the game in the Unity Editor.
+
+### Play on Itchio
+    1- Click on  <a href="https://spstigma.itch.io/shooting-birds" target="_blank">
